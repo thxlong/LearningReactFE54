@@ -1,0 +1,11 @@
+
+// Khởi tạo react
+npm i create-react-app -g
+
+
+// Tạo thư mục react
+create-react-app reactfe54
+
+// Trỏ tới thư mục json
+-> npm i
+-> npm start
