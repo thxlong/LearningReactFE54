@@ -9,3 +9,9 @@ create-react-app reactfe54
 // Trỏ tới thư mục json
 -> npm i
 -> npm start
+
+Buổi 21: Bài tập chọn xe
+Các bước thực hiện task frontend (react js)
+1. Dàn layout (hoàn chỉnh giao diện html css)
+2. Xác định nguồn dữ liệu thay đổi khi người dùng thao tác lên giao diện. Tổ chức lưu trữ trong state.
+3. Xử lý sự kiện set lại giá trị cho state
