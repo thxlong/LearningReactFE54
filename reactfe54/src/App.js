@@ -8,8 +8,8 @@ import DataBinding from "./DataBinding/DataBinding";
 function App() {
   return (
     <div className="App">
-      {/* <BaiTapLayout /> */}
-      <DataBinding />
+      <BaiTapLayout />
+      {/* <DataBinding /> */}
     </div>
   );
 }
