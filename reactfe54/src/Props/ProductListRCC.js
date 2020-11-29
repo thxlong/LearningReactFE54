@@ -13,7 +13,7 @@ export default class ProductListRCC extends Component {
       ram: "4 GB",
       rom: "64 GB",
       giaBan: 5700000,
-      hinhAnh: "./img-card-20201128/vsphone.jpg",
+      hinhAnh: "./img/imgdt/vsphone.jpg",
     },
 
     {
@@ -26,7 +26,7 @@ export default class ProductListRCC extends Component {
       ram: "4 GB",
       rom: "64 GB",
       giaBan: 7600000,
-      hinhAnh: "./img-card-20201128/meizuphone.jpg",
+      hinhAnh: "./img/imgdt/meizuphone.jpg",
     },
 
     {
@@ -39,15 +39,17 @@ export default class ProductListRCC extends Component {
       ram: "4 GB",
       rom: "64 GB",
       giaBan: 27000000,
-      hinhAnh: "./img-card-20201128/applephone.jpg",
+      hinhAnh: "./img/imgdt/applephone.jpg",
     },
   ];
 
   renderProduct = () => {
     return this.dataSanPham.map((sp, index) => {
-      return <div className="col-4" key={index}>
+      return (
+        <div className="col-4" key={index}>
           <ProductRCC sanPham={sp} />
         </div>
+      );
     });
   };
 

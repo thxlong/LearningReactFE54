@@ -8,11 +8,11 @@ export default class ProductRCC extends Component {
     // this.pros.sanPham={}; ----> lỗi không được gán lại
     let { sanPham } = this.props;
     return (
-      <div classname="card">
-        <img classname="card-img-top" src={sanPham.hinhAnh} />
-        <div classname="card-body">
-          <h4 classname="card-title">{sanPham.tenSP}</h4>
-          <p classname="card-text">{sanPham.manHinh}</p>
+      <div className="card">
+        <img className="card-img-top" src={sanPham.hinhAnh} />
+        <div className="card-body">
+          <h4 className="card-title">{sanPham.tenSP}</h4>
+          <p className="card-text">{sanPham.manHinh}</p>
         </div>
       </div>
     );
