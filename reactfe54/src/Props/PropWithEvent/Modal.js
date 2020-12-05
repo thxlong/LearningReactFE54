@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 
 export default class Modal extends Component {
+  tinhTongTien = () => {
+    let tongTien = this.props.cartProps.reduce((tt, spGH, index) => {
+      return tt += spGH.soLuong * spGH.giaBan;
+    }, 0);
+
+    return tongTien.toLocaleString();
+
+    
+    
+  };
   render() {
     return (
       <div>
@@ -49,12 +59,51 @@ export default class Modal extends Component {
                             />
                           </td>
                           <td>{product.tenSP}</td>
-                          <td>{product.soLuong}</td>
+                          <td>
+                            <button
+                              className="btn-info"
+                              onClick={() => {
+                                // Xử lý tăng số lượng
+                                this.props.tangGiamSoLuong(product.maSP, 1);
+                              }}
+                            >
+                              +
+                            </button>
+                            {product.soLuong}
+                            <button
+                              className="btn-info"
+                              onClick={() => {
+                                // Xử lý giảm số lượng
+                                this.props.tangGiamSoLuong(product.maSP, -1);
+                              }}
+                            >
+                              -
+                            </button>
+                          </td>
                           <td>{product.giaBan}</td>
                           <td>{product.giaBan * product.soLuong}</td>
+                          <td>
+                            <button
+                              className="btn btn-danger"
+                              onClick={() => {
+                                //Nhận sự kiện deleteItem thông qua props ten deleteItem
+                                this.props.deleteItem(product.maSP);
+                              }}
+                            >
+                              Xoá
+                            </button>
+                          </td>
                         </tr>
                       );
                     })}
+
+                    <tfoot>
+                      <tr>
+                        <td colSpan="5"></td>
+                        <td>Tổng tiền</td>
+                        <td>{this.tinhTongTien()}</td>
+                      </tr>
+                    </tfoot>
                   </table>
                 </div>
               </div>
