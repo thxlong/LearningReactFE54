@@ -3,6 +3,8 @@ import { combineReducers, createStore } from "redux";
 
 // import state giỏ hàng
 import { GioHangReducer } from "../BaiTapRedux/BaiTapGioHang/GioHangReducer";
+import { BaiTapGameXucXacReducer } from "../BaiTapRedux/BaiTapGameXucXac/BaiTapXucXacRender";
+import BaiTapGameXucXac from "../BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 
 const rootReducer = combineReducers({
   // // các state sau này khai báo tại đây
@@ -11,6 +13,7 @@ const rootReducer = combineReducers({
   // },
 
   stateGioHang: GioHangReducer,
+  stateGameXucXac: BaiTapGameXucXacReducer,
 });
 
 // tạo ra store chứa rootReducer (Xem như state tổng của ứng dụng)
