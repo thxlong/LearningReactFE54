@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class FormSinhVien extends Component {
+class FormSinhVienRedux extends Component {
   state = {
     values: {
       maSinhVien: "",
@@ -94,7 +94,7 @@ class FormSinhVien extends Component {
   };
 
   componentWillReceiveProps(newProps) {
-    // Lấy props từ redux gán vào state của component
+    // Lấy prps từ redux gán vào state của component
     this.setState({
       values: newProps.sinhVienSua,
     });
@@ -188,4 +188,4 @@ const mapStateToProps = (state) => {
   // Vì sao ko edit được khi nhấn chỉnh sửa ===> Life Cycle
 };
 
-export default connect(mapStateToProps)(FormSinhVien);
+export default connect(mapStateToProps)(FormSinhVienRedux);

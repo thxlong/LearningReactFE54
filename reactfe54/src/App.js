@@ -19,6 +19,7 @@ import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 import BaiTapQuanLiSinhVien from "./Form/BaiTapQuanLiSinhVien";
 import FormSinhVien from "./Form/FormSinhVien";
 import TableSinhVien from "./Form/TableSinhVien";
+import ReactLifeCycle from "./ReactLifeCycle/ReactLifeCycle";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       {/* <BaiTapGioHangRedux/> */}
       {/* <BaiTapGameXucXac /> */}
       <BaiTapQuanLiSinhVien />
+      {/* <ReactLifeCycle /> */}
     </div>
   );
 }
