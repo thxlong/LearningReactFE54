@@ -7,7 +7,7 @@ import { BaiTapGameXucXacReducer } from "../BaiTapRedux/BaiTapGameXucXac/BaiTapX
 import BaiTapGameXucXac from "../BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
 
 const rootReducer = combineReducers({
-  // // các state sau này khai báo tại đây
+  // các state sau này khai báo tại đây
   // stateGioHang: (state = stateGioHang, action) => {
   //   return state;
   // },

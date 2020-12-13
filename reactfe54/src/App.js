@@ -16,6 +16,9 @@ import ProductList from "./Props/PropWithEvent/ProductList";
 import PropsWithEvent from "./Props/PropWithEvent/PropsWithEvent";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHang/BaiTapGioHangRedux";
 import BaiTapGameXucXac from "./BaiTapRedux/BaiTapGameXucXac/BaiTapGameXucXac";
+import BaiTapQuanLiSinhVien from "./Form/BaiTapQuanLiSinhVien";
+import FormSinhVien from "./Form/FormSinhVien";
+import TableSinhVien from "./Form/TableSinhVien";
 
 function App() {
   return (
@@ -33,7 +36,8 @@ function App() {
       {/* <ProductList /> */}
       {/* <PropsWithEvent /> */}
       {/* <BaiTapGioHangRedux/> */}
-      <BaiTapGameXucXac />
+      {/* <BaiTapGameXucXac /> */}
+      <BaiTapQuanLiSinhVien />
     </div>
   );
 }

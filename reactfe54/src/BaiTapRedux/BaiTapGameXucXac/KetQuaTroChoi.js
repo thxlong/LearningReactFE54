@@ -14,7 +14,10 @@ export class KetQuaTroChoi extends Component {
         </h1>
 
         <h1 className="display-4">
-          Số bàn thắng <span className="display-4 text-success">0</span>
+          Số bàn thắng{" "}
+          <span className="display-4 text-success">
+            {this.props.soBanThang}
+          </span>
         </h1>
 
         <h1 className="display-4">
