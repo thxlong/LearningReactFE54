@@ -20,6 +20,8 @@ import BaiTapQuanLiSinhVien from "./Form/BaiTapQuanLiSinhVien";
 import FormSinhVien from "./Form/FormSinhVien";
 import TableSinhVien from "./Form/TableSinhVien";
 import ReactLifeCycle from "./ReactLifeCycle/ReactLifeCycle";
+import DemoPure from "./Components/PureComponent/DemoPure";
+import RequestAPI from "./RequestAPI/RequestAPI";
 
 function App() {
   return (
@@ -38,8 +40,10 @@ function App() {
       {/* <PropsWithEvent /> */}
       {/* <BaiTapGioHangRedux/> */}
       {/* <BaiTapGameXucXac /> */}
-      <BaiTapQuanLiSinhVien />
+      {/* <BaiTapQuanLiSinhVien /> */}
       {/* <ReactLifeCycle /> */}
+      {/* <DemoPure /> */}
+      <RequestAPI />
     </div>
   );
 }
