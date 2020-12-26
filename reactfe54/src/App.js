@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       {/* <BaiTapLayout /> */}
-      {/* <DataBinding /> */}
+      <DataBinding />
       {/* <DataBindingClassComponent/> */}
       {/* <HandleEvent/> */}
       {/* <DemoState /> */}
@@ -43,7 +43,7 @@ function App() {
       {/* <BaiTapQuanLiSinhVien /> */}
       {/* <ReactLifeCycle /> */}
       {/* <DemoPure /> */}
-      <RequestAPI />
+      {/* <RequestAPI /> */}
     </div>
   );
 }
