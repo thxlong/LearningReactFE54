@@ -27,11 +27,11 @@ function App() {
   return (
     <div className="App">
       {/* <BaiTapLayout /> */}
-      <DataBinding />
+      {/* <DataBinding /> */}
       {/* <DataBindingClassComponent/> */}
       {/* <HandleEvent/> */}
       {/* <DemoState /> */}
-      {/* <BaiTapChonXe /> */}
+      <BaiTapChonXe />
       {/* <RenderWithMap /> */}
       {/* <BTRenderDSPhim /> */}
       {/* <DemoProps /> */}
